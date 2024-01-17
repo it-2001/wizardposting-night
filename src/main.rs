@@ -1,12 +1,16 @@
 use sfml::graphics::{Shape, Transformable, RenderTarget};
 
+mod game;
 
+
+const WINDOW_WIDTH: u32 = 1920;
+const WINDOW_HEIGHT: u32 = 1080;
 
 fn main() {
     let mut window = sfml::graphics::RenderWindow::new(
-        sfml::window::VideoMode::new(800, 600, 32),
-        "Hello, SFML!",
-        sfml::window::Style::CLOSE,
+        sfml::window::VideoMode::new(WINDOW_WIDTH, WINDOW_HEIGHT, 32),
+        "Wizard posting - Night of the living shitposters",
+        sfml::window::Style::DEFAULT,
         &Default::default(),
     );
 
